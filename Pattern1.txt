@@ -1,0 +1,49 @@
+Pattern 1 :-
+
+	* * * * *
+	* * * * *
+	* * * * *
+	* * * * *
+	* * * * *
+
+Code :-
+
+>>>>> In C++ :
+
+#include<stdio.h>
+using namespace std;
+
+int main(){
+  // Frequency of the required pattern
+  int n;
+  cin>>n;
+
+  for(int i=0; i<n; i++){
+    for(int j=0; j<n; j++){
+      cout<<"* ";
+    }
+    cout<<"\n";
+  }
+  return 0;
+}
+ 
+>>>>> In Java :
+
+import java.io.*;
+import java.util.*;
+
+public class Pattern1 {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int n = sc.nextInt();
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				System.out.print("* ");
+			}
+			System.out.print("\n");
+		}
+		
+	}
+}
